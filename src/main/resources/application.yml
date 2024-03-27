@@ -1,0 +1,44 @@
+spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5434/phoneshop_night_db
+#    username: phoneshop_night
+#    password: phoneshop123
+#  jpa:
+#    hibernate:
+#      ddl-auto: none
+#    properties:
+#        hibernate:
+#          dialect: org.hibernate.dialect.PostgreSQLDialect
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+# 
+#  liquibase:
+#        change-log: classpath:db/changelog/db.changelog-master.yaml
+#        enabled: true
+#app:
+#  jwtSecret: ======================Piseth===========================
+#  jwtExpirationMs: 86400000
+
+  server:
+    port : 8080
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qcweb
+    username: root
+    password: 123456
+  jpa:
+    hibernate.ddl-auto:
+    generate-ddl: true
+    show-sql: true
+liquibase:
+        change-log: classpath:/db/changelog/db.changelog-master.yaml
+        enabled: true
+app:
+  jwtSecret: ======================Piseth===========================
+  jwtExpirationMs: 86400000
+
+
+
+
+
