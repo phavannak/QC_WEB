@@ -28,4 +28,6 @@ public class NewOrder {
 	private LocalDate update_date;
 	private String update_by;
 	private String status;
+	
+	//to upate
 }
